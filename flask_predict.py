@@ -1,7 +1,7 @@
 import pickle 
 from flask import Flask
 import numpy as np
-with open('/content/sample_data/wine_rf.pkl') as model_file:
+with open('/content/sample_data/wine_rf.pkl', 'rb') as model_file:
   model=pickle.load(model_file)
 
 app=Flask(__name__)
